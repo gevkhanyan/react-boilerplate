@@ -1,0 +1,51 @@
+{
+  "name": "basic-boilerplate",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Gevorg Azizkhanyan",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode production --progress",
+    "start": "yarn run start-dev",
+    "start-dev": "webpack-dev-server --open --mode development --progress",
+    "start-prod": "webpack-dev-server --mode production --progress --host 0.0.0.0",
+    "test": "jest --watchAll --config ./jest.config.json"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.9.3",
+    "@material-ui/lab": "^4.0.0-alpha.43",
+    "@material-ui/pickers": "^3.2.10",
+    "axios": "^0.19.2",
+    "core-js": "^3.6.4",
+    "history": "^4.10.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "use-global-hook": "^0.1.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "babel-jest": "^25.1.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.4.2",
+    "eslint": "^6.8.0",
+    "file-loader": "^5.1.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^25.1.0",
+    "node-sass": "^4.13.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
